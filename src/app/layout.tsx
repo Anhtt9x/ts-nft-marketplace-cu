@@ -1,10 +1,9 @@
+
 import type { Metadata } from "next"
 import "./globals.css"
 import Header from "@/components/Header"
 import { type ReactNode } from "react"
 import { Providers } from "./providers"
-import { useEffect, useState } from "react"
-import { useAccount } from "wagmi"
 
 
 

@@ -4,7 +4,6 @@ import { useAccount } from "wagmi"
 import RecentlyListedNFTs from "@/components/RecentlyListed"
 import { useEffect, useState } from "react"
 
-
 export default function Home() {
     const { isConnected } = useAccount()
     const [isCompliant, setIsCompliant] = useState(true)

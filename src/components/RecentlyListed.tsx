@@ -140,10 +140,10 @@ export default function RecentlyListedNFTs() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-4">
                {nftDataList.map(nft => 
                 <Link href={`/buy-nft/${nft.contractAddress}/${nft.tokenId}`} key={`${nft.contractAddress}-${nft.tokenId}`}>
-                    <NFTBox key={`${nft.contractAddress}-${nft.tokenId}`} 
-                                                            contractAddress={nft.contractAddress} 
-                                                            tokenId={nft.tokenId} 
-                                                            price={nft.price} />
+                    <NFTBox 
+                        contractAddress={nft.contractAddress} 
+                        tokenId={nft.tokenId} 
+                        price={nft.price} />
                 </Link>
                )}
             </div>
